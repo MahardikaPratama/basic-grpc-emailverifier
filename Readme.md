@@ -31,8 +31,22 @@ Make sure your system has the following:
 - **gRPC**
 - **BloomRPC** (for testing)
 
-### Install Dependencies (Ubuntu)
+## Install Dependencies (Ubuntu)
 
+### Cmake
+#### Step Installation
+```bash
+sudo apt-get -y install cmake
+```
+
+#### Verify Installation
+```bash
+which cmake
+cmake --version
+```
+
+### gRPC and Protobuf
+#### Step Installation
 ```bash
 sudo apt update
 sudo apt install -y \
@@ -45,12 +59,18 @@ sudo apt install -y \
   libgrpc-dev
 ```
 
-### Verify Installation
+#### Verify Installation
 
 ```bash
 cmake --version
 protoc --version
 which grpc_cpp_plugin
+```
+
+### bloomRPC
+#### Step Installation
+```bash
+choco install bloomrpc
 ```
 
 ---
